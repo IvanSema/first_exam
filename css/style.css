@@ -54,18 +54,19 @@ h1, h2 {
 }
 
 .header {
-  padding: 381px 0 135px 0;
+  padding: 266px 0 123px 0;
   background-image: url(../images/header__background.jpg);
   background-size: cover;
 }
 
 .header__headline {
-  margin: 0 0 5px 0;
+  margin: 0 0 -4px 0;
   display: block;
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
   font-size: 48px;
-  letter-spacing: 10px;
+  font-weight: bold;
+  letter-spacing: 4px;
   text-align: center;
   color: #fff;
 }
@@ -74,10 +75,15 @@ h1, h2 {
   display: block;
   font-family: "Josefin Sans", sans-serif;
   font-size: 22px;
-  letter-spacing: 10px;
+  letter-spacing: 7px;
   text-align: center;
   color: #fff;
-  margin: 0 0 72px 0;
+  margin: 0 0 48px 0;
+}
+
+.header__search-icon {
+  width: 22px;
+  margin: 0 0 -6px 0;
 }
 
 .header .header__form {
@@ -86,7 +92,7 @@ h1, h2 {
   display: flex;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0 auto 125px auto;
+  margin: 0 auto 118px auto;
   background-color: #fff;
   max-width: 650px;
 }
@@ -103,6 +109,7 @@ h1, h2 {
   font-size: 14px;
   color: #999;
   font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 2px;
 }
 
 .header .header__form button {
@@ -116,6 +123,7 @@ h1, h2 {
   height: 55px;
   border: none;
   margin: 2px;
+  cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -136,11 +144,18 @@ h1, h2 {
   letter-spacing: 4px;
 }
 
+.header__scroll-logo {
+  display: block;
+  margin: 0 auto;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 28px 0;
+  padding: 24px 0 27px 0;
   background-color: #5474fd;
 }
 
@@ -173,12 +188,12 @@ h1, h2 {
   display: inline-block;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 8px 0 0 0;
 }
 
 .menu__li {
   display: inline;
-  margin: 0 21px;
+  margin: 0 19px;
   padding: 0;
 }
 
@@ -233,7 +248,7 @@ h1, h2 {
 }
 
 .description-block__row .row__cell:first-child {
-  padding: 90px 0 0 0;
+  padding: 90px 84px 0 0;
 }
 
 .description-block__row:last-child {
