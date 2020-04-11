@@ -160,8 +160,10 @@ h1, h2 {
 
     &__scroll-logo{
         display: block;
-        margin: 0 auto;
+        width: 32px;
+        height: 32px;
         transform: rotate(270deg);
+        margin: 0 auto;
         @media screen and (max-width: 550px){
             display: none;
         }
@@ -406,7 +408,7 @@ h1, h2 {
     &__row{
         display: flex;
         max-width: 970px;
-        margin: 0 auto;
+        margin: 0 65px 0 -65px;
         .row__cell{
             width: 100%;
             max-width: 216px;
