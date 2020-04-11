@@ -132,6 +132,7 @@ h1, h2 {
           flex-grow: 1;
   border: 2px solid transparent;
   font-size: 14px;
+  border-right: none;
   color: #999;
   font-family: "Josefin Sans", sans-serif;
   letter-spacing: 2px;

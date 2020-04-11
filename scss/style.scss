@@ -115,12 +115,14 @@ h1, h2 {
             flex-grow: 1;
             border: 2px solid transparent;
             font-size: 14px;
+            border-right: none;
             color: #999;
             font-family: $fontBase;
             letter-spacing: 2px;
             &:focus{
                 border: 2px solid red;
                 border-right: none;
+
             }
             @media screen and (max-width: 550px){
                 padding: 0 20px;
