@@ -113,11 +113,15 @@ h1, h2 {
             padding: 0 127px;
             display: flex;
             flex-grow: 1;
-            border: none;
+            border: 2px solid transparent;
             font-size: 14px;
             color: #999;
             font-family: $fontBase;
             letter-spacing: 2px;
+            &:focus{
+                border: 2px solid red;
+                border-right: none;
+            }
             @media screen and (max-width: 550px){
                 padding: 0 20px;
             }
@@ -131,8 +135,9 @@ h1, h2 {
             font-size: 14px;
             color: #fff;
             height: 55px;
-            border: none;
-            margin: 2px;
+            margin: 0px;
+            border: 2px solid white;
+            border-left: none;
             cursor: pointer;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -142,6 +147,9 @@ h1, h2 {
             &:active{
                 background-color: #5474fd;
             }
+        }
+        input:focus + button{
+            border-color: red;
         }
     }
     &__scroll{
@@ -172,8 +180,9 @@ h1, h2 {
     
     &__row{
         display: flex;
-        .raw__cell:first-child{
+        .row__cell:first-child{
             flex-grow: 1;
+            margin: 0 290px 0 10px;
         }
         @media screen and (max-width: 800px){
             flex-direction: column;
@@ -213,6 +222,9 @@ h1, h2 {
             text-transform: uppercase;
             font-size: 14px;
             color: #fff;
+        &:hover, &:focus{
+            border-top: 3px solid #1631aa;
+        }
     }
     @media screen and (max-width: 550px){
         display: flex;
@@ -270,6 +282,7 @@ h1, h2 {
         color: white;
         margin: 0 0 12px 0;
         text-transform: uppercase;
+        &:hover{ background: linear-gradient(40deg, rgba(84,116,253,1) 45%, rgba(73,107,254,1) 45%); }
         @media screen and (max-width: 550px){
             width: 100%;
             max-width: none;

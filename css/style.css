@@ -130,11 +130,16 @@ h1, h2 {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  border: none;
+  border: 2px solid transparent;
   font-size: 14px;
   color: #999;
   font-family: "Josefin Sans", sans-serif;
   letter-spacing: 2px;
+}
+
+.header .header__form input:focus {
+  border: 2px solid red;
+  border-right: none;
 }
 
 @media screen and (max-width: 550px) {
@@ -152,8 +157,9 @@ h1, h2 {
   font-size: 14px;
   color: #fff;
   height: 55px;
-  border: none;
-  margin: 2px;
+  margin: 0px;
+  border: 2px solid white;
+  border-left: none;
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -165,6 +171,10 @@ h1, h2 {
 
 .header .header__form button:active {
   background-color: #5474fd;
+}
+
+.header .header__form input:focus + button {
+  border-color: red;
 }
 
 .header__scroll {
@@ -208,10 +218,11 @@ h1, h2 {
   display: flex;
 }
 
-.menu__row .raw__cell:first-child {
+.menu__row .row__cell:first-child {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  margin: 0 290px 0 10px;
 }
 
 @media screen and (max-width: 800px) {
@@ -274,6 +285,10 @@ h1, h2 {
   text-transform: uppercase;
   font-size: 14px;
   color: #fff;
+}
+
+.menu__li a:hover, .menu__li a:focus {
+  border-top: 3px solid #1631aa;
 }
 
 @media screen and (max-width: 550px) {
@@ -344,6 +359,10 @@ h1, h2 {
   color: white;
   margin: 0 0 12px 0;
   text-transform: uppercase;
+}
+
+.description-block__button:hover {
+  background: linear-gradient(40deg, #5474fd 45%, #496bfe 45%);
 }
 
 @media screen and (max-width: 550px) {
