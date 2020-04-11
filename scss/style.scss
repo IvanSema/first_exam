@@ -110,20 +110,14 @@ h1, h2 {
             margin: 0;
         }
         input{
-            padding: 0 127px;
-            display: flex;
             flex-grow: 1;
+            padding: 0 127px;
             border: 2px solid transparent;
             font-size: 14px;
             border-right: none;
             color: #999;
             font-family: $fontBase;
             letter-spacing: 2px;
-            &:focus{
-                border: 2px solid red;
-                border-right: none;
-
-            }
             @media screen and (max-width: 550px){
                 padding: 0 20px;
             }
@@ -150,9 +144,8 @@ h1, h2 {
                 background-color: #5474fd;
             }
         }
-        input:focus + button{
-            border-color: red;
-        }
+
+
     }
     &__scroll{
         font-size: $fontBase;
@@ -185,8 +178,11 @@ h1, h2 {
         .row__cell:first-child{
             flex-grow: 1;
             margin: 0 290px 0 10px;
+            @media screen and (min-width: 551px) and (max-width:1100px){
+                margin: 0;
+            }
         }
-        @media screen and (max-width: 800px){
+        @media screen and (max-width: 1100px){
             flex-direction: column;
         }
     }
@@ -199,7 +195,7 @@ h1, h2 {
         font-size: 24px;
         color: #fff;
         letter-spacing: 4px;
-        @media screen and (max-width: 800px){
+        @media screen and (max-width: 1100px){
             justify-content: center;
         }
     }
@@ -594,6 +590,9 @@ h1, h2 {
         a{
             font-size: 16px;
             color: #e8e8e8;
+            &:focus{
+                color: #5474fd;
+            }
             @media screen and (max-width: 550px){
                 font-size: 40px;
         }
